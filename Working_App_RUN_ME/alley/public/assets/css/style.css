@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/assets/img/bg.png");  
+    background-size: 100%;
+}
+
+.mainText {
+    color: rgb(179, 99, 20);
+    font-size: 60px;
+    background-color:white;
+    max-width: 60%;
+    font-family: 'Modern Antiqua', cursive;
+    text-shadow: -1px -1px 0 rgb(179, 20, 20), 1px -1px 0 #000, -1px 1px 0 rgb(179, 20, 20), 1px 1px 0 #000;
+    display: block;
+    margin: -2% auto 1% auto;
+    border: solid 1px red;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 22px;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.addTitle {
+
+    padding-bottom: 3%;
+    color: white;
+}
+
+.subText {
+    font-size: 32px;
+    font-family: 'IM Fell Double Pica', serif;
+    background-color: lightgray;
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+    padding-top: .25%;
+    padding-bottom: .25%;
+    color: #b31414;
+    text-align: center;
+}
+
+.indexText {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+button {
+    float: right;
+}
+
+h6 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+.footText {
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+footer {
+    color: white;
+    line-height: 2;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+
+.formMe {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.buttonMe {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.pushMe {
+    font-size: 20px;
+}
+
+.itemText {
+    text-align: center;
+    padding-top: 3%;
+    color: white;
+}
+
+.btn-primary {
+    margin-right: 4%;
+}
+
+.bigText404 {
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 36px;
+    padding-top: 3%;
+}
+
+.smallText404 {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 3%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.itemsForSale {
+    margin-left: 9%;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  
+}
+
+.price {
+    margin-bottom: 2%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.spacer {
+    margin-bottom: 50px;
+}
+
+.input {
+    font-size: 18px;
+}
+
+.searchMe {
+    float: right;
+    margin-right: 14%;
+}
+
+.sellButton {
+    float: left;
+}
+
+.sellDiv {
+    margin-top: 2%;
+}
+
+.indexTitle {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin: 0 auto 3% auto;
+    border-radius: 12px;
+    line-height: 2;
+    text-shadow: -1px 1px 0 white, 1px 1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.indexImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    margin-top: 3%;
+}
+
+#masthead {
+    height: 30px;
+}
+
+.space404 {
+    height: 360px;
+}
+
+.sellTitle {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.authSpace {
+    height: 300px;
+}
+
+
+
+
+
+

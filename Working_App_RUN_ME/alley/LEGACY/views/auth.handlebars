@@ -1,0 +1,85 @@
+ <script>
+  
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAWaOo_M5JnPoKeotVmv_IqeMIqZlyyvkY",
+    authDomain: "alley-c261a.firebaseapp.com",
+    databaseURL: "https://alley-c261a.firebaseio.com",
+    projectId: "alley-c261a",
+    storageBucket: "",
+    messagingSenderId: "208798051581"
+  };
+
+    firebase.initializeApp(config);
+
+    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorMessage);
+    });
+
+
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorMessage);
+    });
+
+    firebase.auth().signOut().then(function() {
+        }).catch(function(error) {
+    });
+    </script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.css" />
+    <script type="text/javascript">
+    var uiConfig = {
+        callbacks: {
+          signInSuccess: function(currentUser, credential, redirectUrl) {
+            return true;
+          },
+          signInFailure: function(error) {
+            return handleUIError(error);
+          },
+          uiShown: function() {
+            document.getElementById('loader').style.display = 'none';
+          }
+        },
+        credentialHelper: firebaseui.auth.CredentialHelper.ACCOUNT_CHOOSER_COM,
+        queryParameterForWidgetMode: 'mode',
+        queryParameterForSignInSuccessUrl: 'signInSuccessUrl',
+        signInFlow: 'popup',
+        signInSuccessUrl: './main.html',
+        signInOptions: [
+
+            firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+
+          {
+            provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+            requireDisplayName: true
+          },
+          {
+            provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+            recaptchaParameters: {
+              type: 'image',
+              size: 'invisible',
+              badge: 'bottomleft'
+            }
+          }
+        ],
+        // Terms of service url.
+        tosUrl: '<your-tos-url>'
+      };
+
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      ui.start('#firebaseui-auth-container', uiConfig);
+
+    </script>
+<div class="row">
+    <div class="col-12 authentication">
+        <div id="firebaseui-auth-container" style="vertical-align:middle">
+        </div>
+        <div id="loader">Loading..
+        </div>
+    </div>
+</div>
+<hr>
